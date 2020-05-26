@@ -1,0 +1,43 @@
+{
+  "name": "webgl-utils.js",
+  "version": "1.0.0",
+  "description": "[![Travis][build-badge]][build] [![npm package][npm-badge]][npm] [![Coveralls][coveralls-badge]][coveralls]",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "src",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-web-module",
+    "clean": "nwb clean-module",
+    "prepublishOnly": "npm run build",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nwb": "0.25.x"
+  },
+  "author": "Fi1osof",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "keywords": [
+    "WebGL",
+    "webgl-utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fi1osof/webgl-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fi1osof/webgl-utils/issues"
+  },
+  "homepage": "https://github.com/Fi1osof/webgl-utils#readme"
+}
