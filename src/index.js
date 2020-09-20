@@ -660,7 +660,7 @@ function createProgramInfo(
     const script = document.getElementById(source);
     return script ? script.text : source;
   });
-  const program = webglUtils.createProgramFromSources(gl, shaderSources, opt_attribs, opt_locations, opt_errorCallback);
+  const program = createProgramFromSources(gl, shaderSources, opt_attribs, opt_locations, opt_errorCallback);
   if (!program) {
     return null;
   }
@@ -1332,6 +1332,7 @@ export {
   drawObjectList,
   glEnumToString,
   getExtensionWithKnownPrefixes,
+  loadShader,
   resizeCanvasToDisplaySize,
   setAttributes,
   setBuffersAndAttributes,

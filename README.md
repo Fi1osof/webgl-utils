@@ -60,6 +60,7 @@ var program = createProgramFromScripts(gl, ["vertex-shader-2d", "fragment-shader
 ✔ drawObjectList
 ✔ glEnumToString
 ✔ getExtensionWithKnownPrefixes
+✔ loadShader
 ✔ resizeCanvasToDisplaySize
 ✔ setAttributes
 ✔ setBuffersAndAttributes

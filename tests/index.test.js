@@ -22,6 +22,7 @@ const functions = [
   'setAttributes',
   'setBuffersAndAttributes',
   'setUniforms',
+  'loadShader',
 ];
 
 describe('Check all required functions', () => {

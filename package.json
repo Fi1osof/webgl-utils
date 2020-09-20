@@ -1,6 +1,6 @@
 {
   "name": "webgl-utils.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "[![Travis][build-badge]][build] [![npm package][npm-badge]][npm] [![Coveralls][coveralls-badge]][coveralls]",
   "main": "lib/index.js",
   "module": "es/index.js",
