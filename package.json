@@ -4,6 +4,7 @@
   "description": "[![Travis][build-badge]][build] [![npm package][npm-badge]][npm] [![Coveralls][coveralls-badge]][coveralls]",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "types": "types/index.d.ts",
   "files": [
     "src",
     "es",
@@ -11,12 +12,13 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-web-module",
+    "build": "nwb build-web-module && create-types",
     "clean": "nwb clean-module",
     "prepublishOnly": "npm run build",
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "test:watch": "nwb test --server",
+    "create-types": "npx tsc -p ./ts-config.json"
   },
   "dependencies": {},
   "devDependencies": {
